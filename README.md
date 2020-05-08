@@ -2,7 +2,7 @@
 # Portfolio
 
 This is my one page static site for listing frontend work I did.
-Live version: [alextseitlin.github.io](https://www.alextseitlin.github.io)
+Live version: [alextseitlin.github.io](https://alextseitlin.github.io/)
 
 ## How to Run the Project locally
 After you have cloned this project run install using 
