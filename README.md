@@ -4,8 +4,8 @@
 This is my one page static site for listing frontend work I did.
 Live version: [alextseitlin.github.io](alextseitlin.github.io)
 
-## To Run the Project
-After you clone this project you may try to install all dependencies using 
+## How to Run the Project locally
+After you have cloned this project run install using 
 
 ```
 $ npm i
