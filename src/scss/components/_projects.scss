@@ -1,0 +1,28 @@
+.projects {
+  .project {
+    @extend .my-5;
+
+    &__wrapper {
+      @extend .p-5;
+      background: $white;
+      border-radius: $border-radius-lg;
+      box-shadow: $box-shadow-sm;
+    }
+
+    &__title {
+      @extend .my-4;
+    }
+
+    &__badges {
+      @extend .my-3;
+    }
+
+    &__description {
+      @extend .my-3;
+    }
+
+    &__buttons {
+      @extend .my-3;
+    }
+  }
+}
