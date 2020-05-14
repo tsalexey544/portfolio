@@ -1,0 +1,770 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title data-react-helmet="true">Hu Products</title>
+  <meta data-react-helmet="true" charSet="utf-8" />
+  <meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+  <meta data-react-helmet="true" name="description" content="Hu Products Program" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <style>
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title {
+  color: black;
+  margin-top: 0;
+  z-index: 9; }
+
+.aboutSection::before {
+  content: "";
+  background-image: url(https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/New%20Chocolate%20Bars%20-%20Gabrielle%20Bellettieri%20__optimized.jpg);
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -15; }
+
+.aboutSection .title {
+  text-align: center;
+  color: black;
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.aboutSection .subtitle {
+  color: black; }
+
+.aboutSection .message {
+  background: white;
+  -webkit-box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15); }
+  .aboutSection .message-body {
+    padding: 1.5rem; }
+
+.aboutSection .applyBox .title {
+  text-align: center; }
+
+.icon-yellow {
+  color: #f4c568; }
+
+.icon-lg {
+  font-size: 2em;
+  margin-top: -7px !important; }
+
+.MemberJoin .applySection .left .title {
+  color: black;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px; }
+
+@font-face {
+  font-family: beatrice-regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/font/Beatrice-Regular.otf"); }
+
+@font-face {
+  font-family: beatrice-bold;
+  font-weight: bold;
+  font-style: normal;
+  src: url("assets/font/Beatrice-Bold.otf"); }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  /* font-family: sans-serif; */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+@-ms-viewport {
+  width: device-width; }
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum'; }
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects; }
+
+a:hover {
+  color: #40a9ff; }
+
+a:active {
+  color: #096dd9; }
+
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0; }
+
+a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.MemberJoin .headerSection .title {
+  font-family: "beatrice-bold", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .title,
+.MemberJoin .fbSection .title {
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .title {
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .left > .subtitle,
+.MemberJoin .headerSection .subtitle {
+  font-family: "beatrice-regular", sans-serif;
+  font-size: 24px;
+  /* font-weight: bold; */
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .left .listItem .header {
+  font-family: "beatrice-regular", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+  color: #f4c568; }
+
+.MemberJoin .aboutSection .applyBox .subtitle,
+.MemberJoin .aboutSection .applyBox .title,
+.MemberJoin .aboutSection > .left > .description,
+.MemberJoin .applySection .left .description,
+.MemberJoin .benefitsSection .description,
+.MemberJoin .benefitsSection .left .listItem .itemText,
+.MemberJoin .benefitsSection .right .listItem .itemText,
+.MemberJoin .fbSection .description {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  color: #1a1818; }
+
+.MemberJoin .copyrightSection {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: white;
+  background: #000;
+  text-align: center;
+  padding: 18px 25px; }
+
+.MemberJoin {
+  height: 100%;
+  background-color: white; }
+
+.MemberJoin .headerSection {
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 800px;
+  background-color: black;
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/top-banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.MemberJoin .headerSection .btn {
+  height: 60px;
+  min-width: 234px;
+  font-size: 18px; }
+
+.MemberJoin .headerSection .title {
+  color: white !important;
+  margin-bottom: 30px; }
+
+.MemberJoin .headerSection .subtitle {
+  color: white !important;
+  margin-bottom: 40px; }
+
+.MemberJoin .headerSection .logo {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .headerSection {
+    min-height: 600px;
+    text-align: left;
+    background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/top-banner-mobile.jpg"); }
+  .MemberJoin .headerSection .title {
+    font-size: 48px; }
+  .MemberJoin .headerSection .subtitle {
+    font-size: 26px; }
+  .MemberJoin .headerSection .logo {
+    display: block; } }
+
+.MemberJoin .aboutSection {
+  position: relative;
+  text-align: center;
+  padding: 120px 80px;
+  /* background-color: white; */
+  /* background-image: url(https://i.imgur.com/LA92ksd.jpg); */
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  z-index: 1; }
+
+.MemberJoin .aboutSection .left {
+  margin-right: auto;
+  max-width: 500px;
+  text-align: left; }
+
+.MemberJoin .aboutSection .applyBox {
+  padding: 40px 20px;
+  /* border-radius: 6px; */
+  text-align: center;
+  background: black;
+  /* box-shadow: 0px 16px 34px rgba(48, 53, 57, 0.25); */ }
+
+.MemberJoin .aboutSection .applyBox .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px; }
+
+.MemberJoin .aboutSection .applyBox .subtitle {
+  color: white;
+  margin-bottom: 14px; }
+
+.MemberJoin .aboutSection .applyBox .btn {
+  height: 44px;
+  min-width: 177px;
+  font-size: 16px; }
+
+.MemberJoin .aboutSection > .title {
+  margin-bottom: 120px;
+  margin-top: 0;
+  color: black; }
+
+.MemberJoin .aboutSection > .left > .subtitle {
+  margin-bottom: 40px;
+  color: #2e426d; }
+
+.MemberJoin .aboutSection > .left > .description {
+  margin-bottom: 30px; }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .aboutSection {
+    background-image: none;
+    text-align: left;
+    padding: 50px 25px; }
+  .MemberJoin .aboutSection > .title {
+    margin-bottom: 24px; }
+  .MemberJoin .aboutSection .title {
+    font-size: 30px; }
+  .MemberJoin .aboutSection .subtitle {
+    font-size: 22px; } }
+
+.MemberJoin .benefitsSection {
+  /* background: #2e426d; */
+  min-height: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row; }
+
+.MemberJoin .benefitsSection .title {
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .description {
+  font-size: 18px; }
+
+.MemberJoin .benefitsSection .left {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: black;
+  z-index: 1; }
+
+.MemberJoin .benefitsSection .left::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/New%20Chocolate%20Bars%20-%20Gabrielle%20Bellettieri%20__optimized.jpg");
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .benefitsSection .left .description,
+.MemberJoin .benefitsSection .left .title {
+  color: white; }
+
+.MemberJoin .benefitsSection .left .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .left .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 30px; }
+
+.MemberJoin .benefitsSection .left .listItem .icon {
+  padding-right: 20px; }
+
+.MemberJoin .benefitsSection .left .listItem .icon * {
+  fill: #7fd4f4 !important; }
+
+.MemberJoin .benefitsSection .left .listItem .text {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+/* .MemberJoin .benefitsSection .left .listItem .header {
+    color: #7fd4f4;
+    margin-bottom: 8px;
+  } */
+.MemberJoin .benefitsSection .left .listItem .itemText {
+  color: white;
+  margin-bottom: 15px; }
+
+.MemberJoin .benefitsSection .right {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #e9e8ea;
+  /* background-image: url(https://i.imgur.com/unm73qZ.jpg);
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat; */ }
+
+.MemberJoin .benefitsSection .right::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/Tahini%20Almond%20Butter%20Eggs%202%20-%20Gabrielle%20Bellettieri__optimized.jpg");
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.MemberJoin .benefitsSection .right .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .right .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .right .listItem .icon {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 4px;
+  position: relative; }
+
+.MemberJoin .benefitsSection .right .listItem .itemText {
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin-bottom: 15px; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .benefitsSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .MemberJoin .benefitsSection .title {
+    font-size: 34px; }
+  /* .MemberJoin .benefitsSection .left {
+      background-image: url(https://i.imgur.com/kagvQBZ.jpg);
+    }
+
+    .MemberJoin .benefitsSection .right {
+      background-image: url(https://i.imgur.com/0b2UneB.jpg);
+    } */
+  .MemberJoin .benefitsSection .left,
+  .MemberJoin .benefitsSection .right {
+    padding: 50px 25px; } }
+
+.MemberJoin .applySection {
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.MemberJoin .applySection .left {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+.MemberJoin .applySection .left > * {
+  padding-left: 80px; }
+
+.MemberJoin .applySection .left .description {
+  margin-bottom: 40px; }
+
+.MemberJoin .applySection .left .img {
+  width: 100%; }
+
+.MemberJoin .applySection .right {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center; }
+
+.MemberJoin .applySection .right > * {
+  max-width: 400px;
+  margin: auto; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .applySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 50px 25px; }
+  .MemberJoin .applySection .left > * {
+    padding-left: 0; }
+  .MemberJoin .applySection .left .img {
+    display: none; }
+  .MemberJoin .applySection .right {
+    margin-top: 32px; }
+  .MemberJoin .applySection .title {
+    font-size: 34px; } }
+
+.MemberJoin .fbSection {
+  display: none;
+  background: #2e426d;
+  padding: 120px 25px;
+  text-align: center; }
+
+.MemberJoin .fbSection .content {
+  max-width: 800px;
+  display: inline-block; }
+
+.MemberJoin .fbSection .title {
+  color: white;
+  margin-bottom: 40px; }
+
+.MemberJoin .fbSection .title .icon {
+  margin-right: 16px; }
+
+.MemberJoin .fbSection .title .icon * {
+  fill: white !important; }
+
+.MemberJoin .fbSection .description {
+  color: white;
+  margin-bottom: 40px; }
+
+@media only screen and (max-width: 800px) {
+  .MemberJoin .fbSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .MemberJoin .fbSection .title {
+    font-size: 34px;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .title .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .description {
+    margin-bottom: 25px; } }
+
+.Button {
+  position: relative;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0;
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0; }
+
+.Button:hover.primary {
+  background-color: #f1b846; }
+
+.Button:active.primary {
+  background-color: #f1b846; }
+
+.Button.primary {
+  color: white;
+  background-color: #f4c568;
+  border: none; }
+
+.Button.round {
+  border-radius: 100px; }
+
+.Button .label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600; }
+
+.SvgIcon {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: currentColor;
+  fill: currentColor; }
+
+</style>
+</head>
+
+
+
+<body>
+  <main class="content">
+    <div class="MemberJoin">
+      <div class="headerSection">
+        <h1 class="title">Hu Brand Ambassador Program</h1>
+        <div class="subtitle">Join our community of awesome individuals who embody what it means to be HUman</div>
+        <a href="#apply">
+          <div class="Button btn primary round">
+            <div class="label">Learn More</div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <section class="aboutSection">
+        <h2 class="title">About the Hu Affiliate Program</h2>
+        <div class="left">
+          <div class="message">
+            <div class="message-body">
+              <h3 class="subtitle">
+                Become an extension of the team and help get the word out
+                about Hu and our mission.
+              </h3>
+              <div class="description">Join our affiliate program today and
+                receive 10% monthly commission on any revenue you bring in through
+                both your unique referral links and your unique promo code. We want
+                to hear from you on what makes you unique and why you think your
+                audience would love to learn more about Hu Products.</div>
+
+            </div>
+            <div class="applyBox message-body">
+              <div class="title">Sign up now</div>
+              <div class="subtitle">Let's grow together</div>
+              <a href="#apply">
+                <div class="Button btn primary round">
+                  <div class="label">Learn More</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="benefitsSection">
+        <div class="left">
+          <div class="title">Who You Are</div>
+          <div class="description">We are looking for people who are:</div>
+          <div class="listItem">
+            <div class="icon icon-yellow">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="text">
+              <div class="header">Creative</div>
+              <div class="itemText">You feel passionate about creating content that's unique to who you are</div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="right">
+          <div class="title">How It Works</div>
+          <div class="description">Here's what you need to know:</div>
+          <div class="listItem">
+            <div class="icon icon-yellow icon-lg">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="itemText">Free Hu Gift Pack to Start</div>
+          </div>
+          <div class="listItem">
+            <div class="icon icon-yellow icon-lg">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="itemText">Offer your followers a promo code for Hu Products</div>
+          </div>
+          <div class="listItem">
+            <div class="icon icon-yellow icon-lg">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="itemText">Ability to earn monthly commissions</div>
+          </div>
+          <div class="listItem">
+            <div class="icon icon-yellow icon-lg">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="itemText">Get featured on the Hu Instagram</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CALL TO ACTION -->
+      <div class="applySection" id="apply">
+        <div class="left">
+          <div>
+            <h2 class="title">Sign Up Below</h2>
+            <div class="description">Fill in the form so you can get set up for the program!
+            </div>
+            <img class="img" src="https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/Recipe-Chocolate-Chunk-Vegan-Protein-Nice-Cream-070119%20-%20Gabrielle%20Bellettieri(optimised).jpg" />
+          </div>
+        </div>
+        <div class="right">
+          <iframe id="app_form" frameBorder="0" style="width:100%;height:650px;"></iframe>
+        </div>
+      </div>
+      <div class="fbSection">
+        <div class="content">
+          <div class="title">
+            <svg class="icon SvgIcon" style="width:34px;height:34px" viewBox="0 0 408.788 408.788">
+              <path style="fill:#475993"
+                d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z">
+              </path>
+            </svg> Join the Facebook group</div>
+          <div class="description">Once you&#x27;re approved as an ambassador, join the private Facebook Group to get notified about new campaigns on AspireIQ before anyone else, learn about exclusive events, connect with other ambassadors, share
+            feedback directly with the AspireIQ team, and stay up to date on industry news!</div>
+          <div class="Button primary round">
+            <div class="label">Join the Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrightSection">© Hu Products LLC</div>
+    </div>
+  </main>
+  <script src="https://kit.fontawesome.com/9dd1dcdbe8.js" crossorigin="anonymous"></script>
+  <script>
+    var iframe = document.getElementById("app_form");
+    var parts = window.location.pathname.split('/');
+    var lastSegment = parts.pop() || parts.pop();
+    var baseUrl = window.location.origin; // e.g. https://community.aspireiq.com
+    var redirectUrl = baseUrl + '/join/' + lastSegment + '/thankyou'; // change this to the url you want redirected to.
+
+    iframe.setAttribute('src', baseUrl + '/onboarding_form/' + lastSegment + window.location.search + '&redirectUri=' + redirectUrl);
+  </script>
+</body>
+
+</html>
