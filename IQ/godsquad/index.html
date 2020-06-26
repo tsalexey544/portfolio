@@ -13,7 +13,641 @@
   <link rel="stylesheet" href="https://use.typekit.net/gyx5zoa.css">
 
 
-  <link href="styles.css" rel="stylesheet">
+  <style>
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title {
+  color: black;
+  margin-top: 0;
+  z-index: 9; }
+
+.aboutSection::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/bluebeach%20-%20Ryan%20Ward-Williams%20(1).jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -15; }
+
+.aboutSection .title {
+  text-align: center;
+  color: black;
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.aboutSection .subtitle {
+  color: black; }
+
+.aboutSection .message {
+  background: white;
+  -webkit-box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15); }
+  .aboutSection .message-body {
+    padding: 1.5rem; }
+
+.aboutSection .applyBox .title {
+  text-align: center; }
+
+.icon-yellow {
+  color: #ffdeec; }
+
+.icon-lg {
+  font-size: 2em;
+  margin-top: -7px !important; }
+
+.MemberJoin .applySection .left .title {
+  color: black;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px; }
+
+@font-face {
+  font-family: beatrice-regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/font/Beatrice-Regular.otf"); }
+
+@font-face {
+  font-family: beatrice-bold;
+  font-weight: bold;
+  font-style: normal;
+  src: url("assets/font/Beatrice-Bold.otf"); }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  /* font-family: sans-serif; */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+@-ms-viewport {
+  width: device-width; }
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum'; }
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects; }
+
+a:hover {
+  color: #40a9ff; }
+
+a:active {
+  color: #096dd9; }
+
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0; }
+
+a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.MemberJoin .headerSection .title {
+  font-family: "beatrice-bold", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .title,
+.MemberJoin .fbSection .title {
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .title {
+  font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .left > .subtitle,
+.MemberJoin .headerSection .subtitle {
+  font-family: "beatrice-regular", sans-serif;
+  font-size: 24px;
+  /* font-weight: bold; */
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .left .listItem .header {
+  font-family: "beatrice-regular", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+  color: black; }
+
+.MemberJoin .aboutSection .applyBox .subtitle,
+.MemberJoin .aboutSection .applyBox .title,
+.MemberJoin .aboutSection > .left > .description,
+.MemberJoin .applySection .left .description,
+.MemberJoin .benefitsSection .description,
+.MemberJoin .benefitsSection .left .listItem .itemText,
+.MemberJoin .benefitsSection .right .listItem .itemText,
+.MemberJoin .fbSection .description {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  color: #1a1818; }
+
+.MemberJoin .copyrightSection {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: white;
+  background: #000;
+  text-align: center;
+  padding: 18px 25px; }
+
+.MemberJoin {
+  height: 100%;
+  background-color: white; }
+
+.MemberJoin .headerSection {
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 800px; }
+
+.MemberJoin .headerSection {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #ffdeec;
+  z-index: 1; }
+
+.MemberJoin .headerSection::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/DEW-Final%20-%20Ryan%20Ward-Williams%20(1).jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .headerSection .btn {
+  height: 60px;
+  min-width: 234px;
+  font-size: 18px; }
+
+.MemberJoin .headerSection .title {
+  color: white !important;
+  margin-bottom: 30px; }
+
+.MemberJoin .headerSection .subtitle {
+  color: white !important;
+  margin-bottom: 40px; }
+
+.MemberJoin .headerSection .logo {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .headerSection {
+    min-height: 600px;
+    text-align: left;
+    background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/DEW-Final%20-%20Ryan%20Ward-Williams%20(1).jpg"); }
+  .MemberJoin .headerSection .title {
+    font-size: 48px; }
+  .MemberJoin .headerSection .subtitle {
+    font-size: 26px; }
+  .MemberJoin .headerSection .logo {
+    display: block; } }
+
+.MemberJoin .aboutSection {
+  position: relative;
+  text-align: center;
+  padding: 120px 80px;
+  /* background-color: white; */
+  /* background-image: url(https://i.imgur.com/LA92ksd.jpg); */
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  z-index: 1; }
+
+.MemberJoin .aboutSection .left {
+  margin-right: auto;
+  max-width: 500px;
+  text-align: left; }
+
+.MemberJoin .aboutSection .applyBox {
+  padding: 40px 20px;
+  /* border-radius: 6px; */
+  text-align: center;
+  background: #606e6f;
+  /* box-shadow: 0px 16px 34px rgba(48, 53, 57, 0.25); */ }
+
+.MemberJoin .aboutSection .applyBox .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px; }
+
+.MemberJoin .aboutSection .applyBox .subtitle {
+  color: white;
+  margin-bottom: 14px; }
+
+.MemberJoin .aboutSection .applyBox .btn {
+  height: 44px;
+  min-width: 177px;
+  font-size: 16px; }
+
+.MemberJoin .aboutSection > .title {
+  margin-bottom: 120px;
+  margin-top: 0;
+  color: black; }
+
+.MemberJoin .aboutSection > .left > .subtitle {
+  margin-bottom: 40px;
+  color: #2e426d; }
+
+.MemberJoin .aboutSection > .left > .description {
+  margin-bottom: 30px; }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .aboutSection {
+    background-image: none;
+    text-align: left;
+    padding: 50px 25px; }
+  .MemberJoin .aboutSection > .title {
+    margin-bottom: 24px; }
+  .MemberJoin .aboutSection .title {
+    font-size: 30px; }
+  .MemberJoin .aboutSection .subtitle {
+    font-size: 22px; } }
+
+.MemberJoin .benefitsSection {
+  /* background: #2e426d; */
+  min-height: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row; }
+
+.MemberJoin .benefitsSection .title {
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .description {
+  font-size: 18px; }
+
+.MemberJoin .benefitsSection .left {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #b7d9e7;
+  z-index: 1; }
+
+.MemberJoin .benefitsSection .left::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/pink2.1%20-%20Ryan%20Ward-Williams%20(1).jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .benefitsSection .left .description,
+.MemberJoin .benefitsSection .left .title {
+  color: black; }
+
+.MemberJoin .benefitsSection .left .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .left .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 30px; }
+
+.MemberJoin .benefitsSection .left .listItem .icon {
+  padding-right: 20px;
+  color: black; }
+
+.MemberJoin .benefitsSection .left .listItem .icon * {
+  fill: #7fd4f4 !important; }
+
+.MemberJoin .benefitsSection .left .listItem .text {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+/* .MemberJoin .benefitsSection .left .listItem .header {
+    color: #7fd4f4;
+    margin-bottom: 8px;
+  } */
+.MemberJoin .benefitsSection .left .listItem .itemText {
+  color: black;
+  margin-bottom: 15px; }
+
+.MemberJoin .benefitsSection .right {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #ffdfe3;
+  z-index: 1; }
+
+.MemberJoin .benefitsSection .right::before {
+  content: "";
+  background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/Claydate_FINAL2%20-%20Ryan%20Ward-Williams%20(1).jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .benefitsSection .right .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .right .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .right .listItem .icon {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 4px;
+  position: relative;
+  color: black; }
+
+.MemberJoin .benefitsSection .right .listItem .itemText {
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin-bottom: 15px; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .benefitsSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .MemberJoin .benefitsSection .title {
+    font-size: 34px; }
+  /* .MemberJoin .benefitsSection .left {
+      background-image: url(https://i.imgur.com/kagvQBZ.jpg);
+    }
+
+    .MemberJoin .benefitsSection .right {
+      background-image: url(https://i.imgur.com/0b2UneB.jpg);
+    } */
+  .MemberJoin .benefitsSection .left,
+  .MemberJoin .benefitsSection .right {
+    padding: 50px 25px; } }
+
+.MemberJoin .applySection {
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.MemberJoin .applySection .left {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+.MemberJoin .applySection .left > * {
+  padding-left: 80px; }
+
+.MemberJoin .applySection .left .description {
+  margin-bottom: 40px; }
+
+.MemberJoin .applySection .left .img {
+  width: 100%; }
+
+.MemberJoin .applySection .right {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center; }
+
+.MemberJoin .applySection .right > * {
+  max-width: 400px;
+  margin: auto; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .applySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 50px 25px; }
+  .MemberJoin .applySection .left > * {
+    padding-left: 0; }
+  .MemberJoin .applySection .left .img {
+    display: none; }
+  .MemberJoin .applySection .right {
+    margin-top: 32px; }
+  .MemberJoin .applySection .title {
+    font-size: 34px; } }
+
+.MemberJoin .fbSection {
+  display: none;
+  background: #2e426d;
+  padding: 120px 25px;
+  text-align: center; }
+
+.MemberJoin .fbSection .content {
+  max-width: 800px;
+  display: inline-block; }
+
+.MemberJoin .fbSection .title {
+  color: white;
+  margin-bottom: 40px; }
+
+.MemberJoin .fbSection .title .icon {
+  margin-right: 16px; }
+
+.MemberJoin .fbSection .title .icon * {
+  fill: white !important; }
+
+.MemberJoin .fbSection .description {
+  color: white;
+  margin-bottom: 40px; }
+
+@media only screen and (max-width: 800px) {
+  .MemberJoin .fbSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .MemberJoin .fbSection .title {
+    font-size: 34px;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .title .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .description {
+    margin-bottom: 25px; } }
+
+.Button {
+  position: relative;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0;
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0; }
+
+.Button:hover.primary {
+  background-color: #ffdeec; }
+
+.Button:active.primary {
+  background-color: #ffdeec; }
+
+.Button.primary {
+  color: black;
+  background-color: #ffdeec;
+  border: none; }
+
+.Button.round {
+  border-radius: 100px; }
+
+.Button .label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600; }
+
+.SvgIcon {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: currentColor;
+  fill: currentColor; }
+
+</style>
 </head>
 
 
