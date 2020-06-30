@@ -92,23 +92,94 @@ html {
   padding-right: 15px;
   padding-left: 15px; }
 
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%; }
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
 @media (min-width: 576px) {
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
   .col-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 @media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
   .col-md-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
-    max-width: 66.666667%; } }
+    max-width: 66.666667%; }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 @media (min-width: 992px) {
   .col-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+  .col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
 .title,
@@ -277,7 +348,6 @@ a[disabled] {
 .MemberJoin .aboutSection > .left > .subtitle,
 .MemberJoin .headerSection .subtitle {
   font-size: 24px;
-  /* font-weight: bold; */
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -285,6 +355,8 @@ a[disabled] {
   color: #1a1818; }
 
 .MemberJoin .benefitsSection .left .listItem .header {
+  font-family: quicksand, sans-serif;
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -345,13 +417,13 @@ a[disabled] {
   -webkit-box-flex: 1;
   flex: 1;
   padding: 60px 80px;
-  background-color: #ffdeec;
+  background-color: #fe9397;
   z-index: 1; }
 
 .MemberJoin .headerSection::before {
   content: "";
   background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/DEW-Final%20-%20Ryan%20Ward-Williams%20(1).jpg");
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -365,7 +437,24 @@ a[disabled] {
 .MemberJoin .headerSection .btn {
   height: 60px;
   min-width: 234px;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  background: #ebb9c424; }
+
+.MemberJoin .headerSection .btn:hover {
+  height: 60px;
+  min-width: 234px;
+  font-size: 18px;
+  color: #000;
+  border: 2px solid #ffdeec;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  background: #ffdeec; }
 
 .MemberJoin .headerSection .title {
   color: white !important;
@@ -373,7 +462,8 @@ a[disabled] {
 
 .MemberJoin .headerSection .subtitle {
   color: white !important;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-family: quicksand, sans-serif; }
 
 .MemberJoin .headerSection .logo {
   display: none;
@@ -477,10 +567,22 @@ a[disabled] {
   background-color: #b7d9e7;
   z-index: 1; }
 
+@media only screen and (min-width: 576px) {
+  .MemberJoin .benefitsSection .left .block-wrapper,
+  .MemberJoin .benefitsSection .right .block-wrapper {
+    max-width: 540px;
+    margin: auto; } }
+
+@media only screen and (min-width: 768px) {
+  .MemberJoin .benefitsSection .left .block-wrapper,
+  .MemberJoin .benefitsSection .right .block-wrapper {
+    max-width: 720px;
+    margin: auto; } }
+
 .MemberJoin .benefitsSection .left::before {
   content: "";
   background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/pink2.1%20-%20Ryan%20Ward-Williams%20(1).jpg");
-  opacity: 0.8;
+  opacity: 0.5;
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -536,7 +638,7 @@ a[disabled] {
 .MemberJoin .benefitsSection .right::before {
   content: "";
   background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/Claydate_FINAL2%20-%20Ryan%20Ward-Williams%20(1).jpg");
-  opacity: 0.8;
+  opacity: 0.5;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -732,8 +834,20 @@ a[disabled] {
   color: currentColor;
   fill: currentColor; }
 
+.w-100 {
+  width: 100%; }
+
+.mt-3 {
+  margin-top: 1.5rem; }
+
+.fa-drop:before {
+  content: url(https://storage.googleapis.com/aspirex-program-onboarding/godsquad/drop--black.png);
+  transform: scale(0.6);
+  display: block;
+  margin-top: -2px; }
+
 </style>
-</head>  
+</head>
 
 
 <body>
@@ -758,26 +872,27 @@ a[disabled] {
           <div class="row">
             <div class="col-md-8 col-lg-6">
               <!-- <div class="left"> -->
-                <div class="message">
-                  <div class="message-body">
-                    <h3 class="subtitle">
-                      Godsquad Elite is a specially-curated group of our top customers, influencers, and friends of our brand who share a common passion for excellence in skincare, paired with an affinity for manifestation and the power of positive
-                      thought.
-                    </h3>
-                    <div class="description">We're excited to welcome you to our inclusively-exclusive club that we've custom-built to provide you with early access to new products, exclusive invites to events and meetups, and one-on-one conversations with
-                      our team and our founder to build a more inclusive, responsive brand.</div>
+              <div class="message">
+                <div class="message-body">
+                  <h3 class="subtitle">
+                    Godsquad Elite is a specially-curated group of our top customers, influencers, and friends of our brand who share a common passion for excellence in skincare, paired with an affinity for manifestation and the power of positive
+                    thought.
+                  </h3>
+                  <div class="description">We're excited to welcome you to our inclusively-exclusive club that we've custom-built to provide you with early access to new products, exclusive invites to events and meetups, and one-on-one conversations
+                    with
+                    our team and our founder to build a more inclusive, responsive brand.</div>
 
-                  </div>
-                  <div class="applyBox message-body">
-                    <div class="title">Apply to Join</div>
-                    <div class="subtitle">It only takes a few minutes, and helps us identify if you're a good fit for Godsquad Elite</div>
-                    <a href="#apply">
-                      <div class="Button btn primary round">
-                        <div class="label">Learn More</div>
-                      </div>
-                    </a>
-                  </div>
                 </div>
+                <div class="applyBox message-body">
+                  <div class="title">Apply to Join</div>
+                   <div class="subtitle">It only takes a few minutes, and helps us identify if you're a good fit for Godsquad Elite</div>
+                  <a href="#apply">
+                     <div class="Button btn primary round">
+                      <div class="label">Learn More</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <!-- </div> -->
             </div>
           </div>
@@ -785,100 +900,104 @@ a[disabled] {
 
       </section>
 
-
-      <div class="benefitsSection">
+         <div class="benefitsSection">
         <div class="left">
-          <!-- HOW YOU ARE -->
-          <div class="title">Our Gods & Goddesses</div>
-          <!-- SUBTITLE -->
-          <div class="description">They're a special breed. Does this sound like you?</div>
-          <div class="listItem">
-            <div class="icon">
-              <i class="fas fa-fw fa-2x fa-heart"></i>
+          <div class="block-wrapper">
+            <!-- HOW YOU ARE -->
+            <div class="title">Our Gods & Goddesses</div>
+            <!-- SUBTITLE -->
+            <div class="description">They're a special breed. Does this sound like you?</div>
+            <div class="listItem">
+              <div class="icon">
+                <i class="fas fa-fw fa-2x fa-heart"></i>
+              </div>
+              <div class="text">
+                <div class="header">Passionate about skincare</div>
+                <div class="itemText">The quality and ingredients of your skincare regimen matters a lot to you.</div>
+              </div>
             </div>
-            <div class="text">
-              <div class="header">Passionate about skincare</div>
-              <div class="itemText">The quality and ingredients of your skincare regimen matters a lot to you.</div>
+            <div class="listItem">
+              <div class="icon">
+                <i class="fas fa-fw fa-2x fa-thumbs-up"></i>
+              </div>
+              <div class="text">
+                <div class="header">Loud on social</div>
+                <div class="itemText">You have an audience that you communicate with face-to-face on the daily.</div>
+              </div>
             </div>
-          </div>
-          <div class="listItem">
-            <div class="icon">
-              <i class="fas fa-fw fa-2x fa-thumbs-up"></i>
+            <div class="listItem">
+              <div class="icon">
+                <i class="fas fa-fw fa-2x fa-star"></i>
+              </div>
+              <div class="text">
+                <div class="header">Down to try new products</div>
+                <div class="itemText">You love to experiment with new and innovative products.</div>
+              </div>
             </div>
-            <div class="text">
-              <div class="header">Loud on social</div>
-              <div class="itemText">You have an audience that you communicate with face-to-face on the daily.</div>
-            </div>
-          </div>
-          <div class="listItem">
-            <div class="icon">
-              <i class="fas fa-fw fa-2x fa-star"></i>
-            </div>
-            <div class="text">
-              <div class="header">Down to try new products</div>
-              <div class="itemText">You love to experiment with new and innovative products.</div>
-            </div>
-          </div>
-          <div class="listItem">
-            <div class="icon">
-              <i class="fas fa-fw fa-2x fa-smile"></i>
-            </div>
-            <div class="text">
-              <div class="header">A passion enthusiast</div>
-              <div class="itemText">You love new experiences, meeting new people, and exploring the world around you.</div>
+            <div class="listItem">
+              <div class="icon">
+                <i class="fas fa-fw fa-2x fa-smile"></i>
+              </div>
+              <div class="text">
+                <div class="header">A passion enthusiast</div>
+                <div class="itemText">You love new experiences, meeting new people, and exploring the world around you.</div>
+              </div>
             </div>
           </div>
 
 
         </div>
         <div class="right">
-          <!-- WHAT WILL YOU GET -->
-          <div class="title">The Perks</div>
-          <div class="description">We want to treat you to new and exciting perks available only to the Godsquad Elite!</div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
+          <div class="block-wrapper">
+
+            <!-- WHAT WILL YOU GET -->
+            <div class="title">The Perks</div>
+            <div class="description">We want to treat you to new and exciting perks available only to the Godsquad Elite!</div>
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">Exclusive pre-purchase options for new products.</div>
             </div>
-            <div class="itemText">Exclusive pre-purchase options for new products.</div>
-          </div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">
+                Exclusive discounts and promotions only for the Godsquad Elite.
+              </div>
             </div>
-            <div class="itemText">
-              Exclusive discounts and promotions only for the Godsquad Elite.
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">
+                Invitations to exclusive Dew events, photoshoots and parties.
+              </div>
             </div>
-          </div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">
+                Access to our affiliate program where you can earn money for sales you refer to Dew.
+              </div>
             </div>
-            <div class="itemText">
-              Invitations to exclusive Dew events, photoshoots and parties.
-            </div>
-          </div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
-            </div>
-            <div class="itemText">
-              Access to our affiliate program where you can earn money for sales you refer to Dew.
-            </div>
-          </div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
-            </div>
-            <div class="itemText">
-              A seat on our GS Focus Group to help influence future products, promotions and marketing plans.
-            </div>
-          </div>
-          <div class="listItem">
-            <div class="icon icon-lg">
-              <i class="fas fa-check"></i>
-            </div>
-            <div class="itemText">
-              Access to our network of Godsquad Elite Ambassadors.
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">
+                A seat on our GS Focus Group to help influence future products, promotions and marketing plans.
+              </div>
+            </div>     
+            <div class="listItem">
+              <div class="icon icon-lg">
+                <i class="fas fa-drop"></i>
+              </div>
+              <div class="itemText">
+                Access to our network of Godsquad Elite Ambassadors.
+              </div>
             </div>
           </div>
         </div>
@@ -887,18 +1006,41 @@ a[disabled] {
 
       <!-- CALL TO ACTION -->
       <div class="applySection" id="apply">
-        <div class="left">
-          <div>
-            <h2 class="title">Let's party.</h2>
-            <div class="description">We're excited to welcome you to the Godsquad Elite. A member of our team will review your application and get back to you as soon as possible. If you have questions in the mean time, feel free to email us at
-              <a href="mailto:hello@dew.co">hello@dew.co</a>.
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div>
+                <h2 class="title">Let's party.</h2>
+                <div class="row">
+                  <div class="col-10 col-lg-12">
+
+                    <div class="description">
+                      We're excited to welcome you to the Godsquad Elite.
+                      A member of our team will review your application
+                      and get back to you as soon as possible. If you have
+                      questions in the mean time, feel free to email us at
+                      <a href="mailto:hello@dew.co">hello@dew.co</a>.
+                    </div>
+                  </div>
+                  <div class="col-12">
+
+                    <img class="img w-100 mt-3" src="https://storage.googleapis.com/aspirex-program-onboarding/godsquad/photo1%20-%20Ryan%20Ward-Williams%20(1).jpg" />
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <img class="img" src="https://storage.googleapis.com/aspirex-program-onboarding/godsquad/photo1%20-%20Ryan%20Ward-Williams%20(1).jpg" />
+            <div class="col-lg-6">
+              <iframe id="app_form" frameBorder="0" style="width:100%;height:650px;"></iframe>
+
+            </div>
           </div>
         </div>
-        <div class="right">
-          <iframe id="app_form" frameBorder="0" style="width:100%;height:650px;"></iframe>
+        <!-- <div class="left">
+
         </div>
+        <div class="right">
+        </div> -->
       </div>
       <div class="fbSection">
         <div class="content">
@@ -915,7 +1057,7 @@ a[disabled] {
           </div>
         </div>
       </div>
-      <div class="copyrightSection">Copyright © 2020 Dew Beauty Inc.</div>
+      <div class="copyrightSection">Copyright <span style="font-family: quicksand, sans-serif;">©</span> 2020 Dew Beauty Inc.</div>
     </div>
   </main>
   <script src="https://kit.fontawesome.com/9dd1dcdbe8.js" crossorigin="anonymous"></script>
@@ -930,8 +1072,7 @@ a[disabled] {
   </script>
 
   <script>
-
-  function anchorLinkHandler(e) {
+    function anchorLinkHandler(e) {
       const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
 
       e.preventDefault();
@@ -940,23 +1081,26 @@ a[disabled] {
       if (!targetAnchor) return;
       const originalTop = distanceToTop(targetAnchor);
 
-      window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+      window.scrollBy({
+        top: originalTop,
+        left: 0,
+        behavior: "smooth"
+      });
 
       const checkIfDone = setInterval(function() {
-          const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-          if (distanceToTop(targetAnchor) === 0 || atBottom) {
-              targetAnchor.tabIndex = "-1";
-              targetAnchor.focus();
-              window.history.pushState("", "", targetID);
-              clearInterval(checkIfDone);
-          }
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = "-1";
+          targetAnchor.focus();
+          window.history.pushState("", "", targetID);
+          clearInterval(checkIfDone);
+        }
       }, 1000);
-  }
+    }
 
-  const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+    const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
-  linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
-
+    linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
   </script>
 </body>
 
