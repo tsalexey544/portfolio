@@ -1,0 +1,28 @@
+@import "lib/bootstrap/bootstrap";
+
+// COMPONENTS
+@import "component/sizes";
+@import "component/nav";
+@import "component/dropdown"; 
+@import "component/bg";
+@import "component/footer";
+
+.cover-hero {
+  background-repeat: no-repeat;
+      background-position: bottom center;
+      padding-top: $size-4;
+      padding-bottom: $size-6;
+
+  &__content {
+    display: flex;
+    height: 92vh;
+    justify-content: space-between;
+    align-items: initial;
+    flex-direction: column;
+
+    &-lead {
+      text-transform: uppercase;
+      padding-bottom: $size-4;
+    }
+  }
+}

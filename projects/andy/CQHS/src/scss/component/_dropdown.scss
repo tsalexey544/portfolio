@@ -1,0 +1,14 @@
+.navbar-dark {
+  .dropdown-toggle::after {
+    content: url("../img/icon/toggle.svg");
+    // margin-left: 0.255em;
+    vertical-align: initial;
+    border-top: initial;
+    border-right: initial;
+    border-bottom: initial;
+    border-left: initial;
+    /* width: 97%; */
+    position: relative;
+    transform: scale(0.8);
+  }
+}
