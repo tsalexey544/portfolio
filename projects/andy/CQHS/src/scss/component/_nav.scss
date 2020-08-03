@@ -16,3 +16,12 @@
     }
   }
 }
+
+.navbar-brand {
+  @include media-breakpoint-down(sm) {
+    max-width: 250px;
+  }
+  @include media-breakpoint-down(xs) {
+    max-width: 200px;
+  }
+}

@@ -14,8 +14,8 @@
         margin: auto;
         height: 20px;
         width: 5px;
-        -webkit-mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
-        mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
+        -webkit-mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
+        mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         background-color: $primary;

@@ -9789,7 +9789,8 @@ a.text-gray:hover, a.text-gray:focus {
   color: #565C74;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  letter-spacing: 0.16em; }
 
 .btn-xl {
   padding: 1rem 4rem;
@@ -9807,7 +9808,9 @@ a.text-gray:hover, a.text-gray:focus {
   .form-control::placeholder {
     color: #fff; }
   .form-control-xl {
-    height: 80px; }
+    height: 80px;
+    margin-bottom: 3rem;
+    font-size: 1.5rem; }
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
@@ -9852,6 +9855,14 @@ a.text-gray:hover, a.text-gray:focus {
     position: absolute;
     bottom: -0.25rem;
     background: #D53D27; }
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    max-width: 250px; } }
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    max-width: 200px; } }
 
 .navbar-dark .dropdown-toggle::after {
   content: url("../img/icon/toggle.svg");
@@ -9902,6 +9913,7 @@ footer {
 .cover-hero {
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: cover;
   padding-top: 1.5rem;
   padding-bottom: 2.5rem; }
   .cover-hero__content {
@@ -9931,8 +9943,8 @@ footer {
       margin: auto;
       height: 20px;
       width: 5px;
-      -webkit-mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
-      mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
+      -webkit-mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
+      mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
       -webkit-mask-size: cover;
       mask-size: cover;
       background-color: #304C89; }
