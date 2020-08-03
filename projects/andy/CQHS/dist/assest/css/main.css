@@ -10891,7 +10891,8 @@ footer {
     color: #D53D27; }
 
 .c-quote__message {
-  position: relative; }
+  position: relative;
+  line-height: 110.4%; }
   .c-quote__message:after {
     content: url("../img/icon/quote-up.svg");
     position: absolute;
@@ -10913,8 +10914,3 @@ footer {
   margin-top: -9.5rem;
   padding-top: 4rem;
   z-index: -1; }
-
-@media (min-width: 768px) {
-  .rounded-md-right-0 {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; } }

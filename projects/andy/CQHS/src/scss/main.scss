@@ -26,10 +26,3 @@
   padding-top: $size-9;
   z-index: -1;
 }
-
-.rounded-md-right-0 {
-  @include media-breakpoint-up(md) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
-  }
-}
