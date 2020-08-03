@@ -10,3 +10,17 @@
     }
   }
 }
+
+.card--horizontal {
+  .card-img {
+    @include media-breakpoint-up(md) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    @include media-breakpoint-down(md) {
+      // border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

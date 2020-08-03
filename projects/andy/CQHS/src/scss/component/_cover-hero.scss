@@ -1,6 +1,6 @@
 .cover-hero {
-position: relative;
-z-index: 2;
+  position: relative;
+  z-index: 2;
 
   &__hero {
     background-repeat: no-repeat;
@@ -10,7 +10,6 @@ z-index: 2;
     padding-bottom: $size-6;
   }
 
-
   &__content {
     display: flex;
     height: 92vh;
@@ -18,16 +17,21 @@ z-index: 2;
     align-items: initial;
     flex-direction: column;
 
-    &-lead {
+    &-title {
       @extend .display-4;
       font-weight: 300;
       text-transform: uppercase;
-      padding-bottom: $size-4;
+      margin-bottom: $size-4;
       color: $white;
 
       b {
         font-weight: 500;
       }
+    }
+
+    &-lead {
+      @extend .lead;
+      margin-bottom: $size-4;
     }
   }
 }

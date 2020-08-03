@@ -334,9 +334,12 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
-.lead {
-  font-size: 1.25rem;
+.lead, .cover-hero__content-lead {
+  font-size: 1.5rem;
   font-weight: 300; }
+  @media (max-width: 1200px) {
+    .lead, .cover-hero__content-lead {
+      font-size: calc(1.275rem + 0.3vw) ; } }
 
 .display-1 {
   font-size: 6rem;
@@ -362,12 +365,12 @@ h6, .h6 {
     .display-3 {
       font-size: calc(1.575rem + 3.9vw) ; } }
 
-.display-4, .cover-hero__content-lead {
+.display-4, .cover-hero__content-title {
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.2; }
   @media (max-width: 1200px) {
-    .display-4, .cover-hero__content-lead {
+    .display-4, .cover-hero__content-title {
       font-size: calc(1.425rem + 2.1vw) ; } }
 
 hr {
@@ -10704,6 +10707,9 @@ a.text-gray:hover, a.text-gray:focus {
     .large {
       font-size: 22px; } }
 
+.lead, .cover-hero__content-lead {
+  line-height: 140%; }
+
 .btn-xl {
   padding: 1rem 4rem;
   font-size: 22px; }
@@ -10821,6 +10827,16 @@ a.text-gray:hover, a.text-gray:focus {
   width: 100%;
   height: 0.25rem; }
 
+@media (min-width: 768px) {
+  .card--horizontal .card-img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; } }
+
+@media (max-width: 991.98px) {
+  .card--horizontal .card-img {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; } }
+
 footer {
   background: #0D1B4F;
   color: #fff; }
@@ -10840,13 +10856,15 @@ footer {
     justify-content: space-between;
     align-items: initial;
     flex-direction: column; }
-    .cover-hero__content-lead {
+    .cover-hero__content-title {
       font-weight: 300;
       text-transform: uppercase;
-      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
       color: #fff; }
-      .cover-hero__content-lead b {
+      .cover-hero__content-title b {
         font-weight: 500; }
+    .cover-hero__content-lead {
+      margin-bottom: 1.5rem; }
 
 .c-feature-blocks__block {
   padding: 1.5rem;
@@ -10895,3 +10913,8 @@ footer {
   margin-top: -9.5rem;
   padding-top: 4rem;
   z-index: -1; }
+
+@media (min-width: 768px) {
+  .rounded-md-right-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; } }
