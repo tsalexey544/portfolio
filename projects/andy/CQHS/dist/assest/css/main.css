@@ -4891,7 +4891,7 @@ button.bg-gray:focus {
 .bg-transparent {
   background-color: transparent !important; }
 
-.border {
+.border, .c-quote {
   border: 1px solid #dee2e6 !important; }
 
 .border-top {
@@ -6178,7 +6178,7 @@ button.bg-gray:focus {
 .px-7 {
   padding-left: 3rem !important; }
 
-.p-8 {
+.p-8, .c-quote {
   padding: 3.5rem !important; }
 
 .pt-8,
@@ -9570,7 +9570,7 @@ button.bg-gray:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, .c-quote {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -9792,6 +9792,18 @@ a.text-gray:hover, a.text-gray:focus {
   margin-bottom: 2rem;
   letter-spacing: 0.16em; }
 
+.xxlarge, .c-quote__message {
+  font-size: 36px; }
+  @media (max-width: 991.98px) {
+    .xxlarge, .c-quote__message {
+      font-size: 24px; } }
+
+.large {
+  font-size: 22px; }
+  @media (max-width: 991.98px) {
+    .large {
+      font-size: 22px; } }
+
 .btn-xl {
   padding: 1rem 4rem;
   font-size: 22px; }
@@ -9952,9 +9964,21 @@ footer {
     background: #fff;
     color: #D53D27; }
 
+.c-quote__message {
+  position: relative; }
+  .c-quote__message:after {
+    content: url("../img/icon/quote-up.svg");
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    z-index: -1; }
+  .c-quote__message:before {
+    content: url("../img/icon/quote-down.svg");
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    z-index: -1; }
+
 .link-secondary {
   color: #D53D27;
   font-weight: 700; }
-
-.large {
-  font-size: 22px; }

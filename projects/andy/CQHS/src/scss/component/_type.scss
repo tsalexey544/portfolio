@@ -7,10 +7,25 @@
   letter-spacing: 0.16em;
 }
 
-.xlarge {
+.xxlarge {
   font-size: 36px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+  }
 }
+
+// .xlarge {
+//   font-size: 36px;
+//
+//   @include media-breakpoint-down(md) {
+//     font-size: 24px;
+//   }
+// }
 
 .large {
   font-size: 22px;
+  @include media-breakpoint-down(md) {
+    font-size: 22px;
+  }
 }
