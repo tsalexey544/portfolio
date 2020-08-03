@@ -1,0 +1,27 @@
+.c-quote {
+  @extend .border;
+  @extend .p-8;
+  @extend .text-center;
+
+  &__message {
+    @extend .xxlarge;
+    position: relative;
+
+
+    &:after {
+      content: url("../img/icon/quote-up.svg");
+      position: absolute;
+      top: -$size-3;
+      left: 0;
+      z-index: -1;
+    }
+
+    &:before {
+      content: url("../img/icon/quote-down.svg");
+      position: absolute;
+      bottom: -$size-3;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
