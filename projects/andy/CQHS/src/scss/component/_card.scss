@@ -24,3 +24,13 @@
     }
   }
 }
+
+.card--icon {
+  .card-img {
+    max-width: 150px;
+    padding: $size-4;
+  }
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}

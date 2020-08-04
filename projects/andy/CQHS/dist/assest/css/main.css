@@ -10837,6 +10837,14 @@ a.text-gray:hover, a.text-gray:focus {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; } }
 
+.card--icon .card-img {
+  max-width: 150px;
+  padding: 1.5rem; }
+
+@media (max-width: 991.98px) {
+  .card--icon {
+    text-align: center; } }
+
 footer {
   background: #0D1B4F;
   color: #fff; }
@@ -10852,13 +10860,14 @@ footer {
     padding-bottom: 2.5rem; }
   .cover-hero__content {
     display: flex;
-    height: 92vh;
+    min-height: 92vh;
     justify-content: space-between;
     align-items: initial;
     flex-direction: column; }
+    .cover-hero--small .cover-hero__content {
+      min-height: 40vh; }
     .cover-hero__content-title {
       font-weight: 300;
-      text-transform: uppercase;
       margin-bottom: 1.5rem;
       color: #fff; }
       .cover-hero__content-title b {

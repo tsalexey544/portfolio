@@ -12,15 +12,19 @@
 
   &__content {
     display: flex;
-    height: 92vh;
+    min-height: 92vh;
     justify-content: space-between;
     align-items: initial;
     flex-direction: column;
 
+    .cover-hero--small & {
+      min-height: 40vh;
+    }
+
     &-title {
       @extend .display-4;
       font-weight: 300;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       margin-bottom: $size-4;
       color: $white;
 
