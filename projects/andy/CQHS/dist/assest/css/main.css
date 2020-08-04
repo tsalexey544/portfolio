@@ -10729,7 +10729,7 @@ a.text-gray:hover, a.text-gray:focus {
 .custom-select {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: #fff url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxOCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMTVMMC4zMzk3NDcgLTIuNzYwMThlLTA3TDE3LjY2MDMgLTEuNzkwMjJlLTA2TDkgMTVaIiBmaWxsPSIjMzgzODM4Ii8+Cjwvc3ZnPgo=") no-repeat right 2rem center/20px 20px;
+  background: #fff url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxOCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMTVMMC4zMzk3NDcgLTIuNzYwMThlLTA3TDE3LjY2MDMgLTEuNzkwMjJlLTA2TDkgMTVaIiBmaWxsPSIjMzgzODM4Ii8+Cjwvc3ZnPgo=") no-repeat right 1rem center/20px 20px;
   border-radius: 0; }
   .custom-select::-ms-expand {
     display: none; }
