@@ -17,7 +17,7 @@ function initMap() {
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    // pixelOffset: new google.maps.Size(-220, 150)
+    pixelOffset: new google.maps.Size(0, -20)
   });
   const marker = new google.maps.Marker({
     position: mapLocation,
