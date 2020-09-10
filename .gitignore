@@ -4,6 +4,7 @@
 /node_modules
 node_modules
 /client/node_modules
+/projects/react/whats-app-clone/client/node_modules
 /.pnp
 .pnp.js
 
