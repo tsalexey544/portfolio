@@ -171,11 +171,11 @@ html {
 /*# sourceMappingURL=bootstrap-grid.css.map */
 @font-face {
   font-family: ATCDuel-V4;
-  src: url("/assets/font/ATCDuel-V4.woff"); }
+  src: url("assets/font/ATCDuel-V4.woff"); }
 
 @font-face {
   font-family: ATCDuel-V8;
-  src: url("/assets/font/ATCDuel-V8.woff"); }
+  src: url("assets/font/ATCDuel-V8.woff"); }
 
 .title,
 h1,
