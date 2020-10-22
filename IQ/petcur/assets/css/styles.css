@@ -282,7 +282,7 @@ a[disabled] {
     bottom: -11px; }
 
 .bg-about {
-  background: url(/assets/img/GS_Dog_Owner_Thanksgiving_1020.jpg);
+  background: url(assets/img/GS_Dog_Owner_Thanksgiving_1020.jpg);
   background-size: cover;
   background-position: center;
   min-height: 400px; }
