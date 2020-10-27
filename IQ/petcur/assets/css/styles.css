@@ -395,16 +395,13 @@ a[disabled] {
     .benefit .list li {
       margin-bottom: 25px; }
     .benefit .list__title {
-      color: #5C95A1;
-      text-transform: uppercase;
+      color: #000;
       font-size: 1.25rem;
       font-weight: 700; }
     .benefit .list__description {
       color: #2e2e2e; }
   .benefit__left {
     background: url("assets/img/PCB_formula_texture_left.jpg"); }
-    .benefit__left p {
-      color: #2e2e2e; }
   .benefit__right {
     background: url("assets/img/PCB_formula_texture_right.jpg"); }
 
