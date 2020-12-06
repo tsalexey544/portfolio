@@ -1,0 +1,727 @@
+<!doctype html>
+
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+  <title data-react-helmet="true">Equilibria</title>
+  <meta data-react-helmet="true" charSet="utf-8" />
+  <meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+  <meta data-react-helmet="true" name="description" content="Manitoba Harvest Hemp Ambassadors" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/img/favicon.jpg" />
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/drs6pvk.css"> -->
+  <style>
+/*!
+ * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import url("https://use.typekit.net/bxo2fbw.css");
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px; } }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%; }
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+@media (min-width: 576px) {
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=bootstrap-grid.css.map */
+.title,
+h1,
+h1.title,
+h2,
+h2.title,
+h3,
+h3.title,
+h4,
+h4.title,
+h5,
+h5.title {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0;
+  z-index: 9; }
+
+.w-100 {
+  width: 100%; }
+
+.m-auto {
+  margin: auto; }
+
+.mt-3 {
+  margin-top: 1.5rem; }
+
+.fa-drop:before {
+  content: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/drop--black.png");
+  transform: scale(0.4);
+  display: block;
+  margin-top: -3px;
+  margin-left: -8px; }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400; }
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  /* font-family: sans-serif; */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+@-ms-viewport {
+  width: device-width; }
+
+body {
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-variant: tabular-nums;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum'; }
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects; }
+
+.mb-7 {
+  margin-bottom: 3rem; }
+
+.p-0 {
+  padding: 0; }
+
+.py-5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.py-9 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.px-5 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.btn {
+  background: #000;
+  color: #ffdeec;
+  padding: 25px 30px;
+  border-radius: 0;
+  font-weight: 400; }
+  .btn .label {
+    margin-top: -4px;
+    text-align: center; }
+
+.hero {
+  background-image: url("assets/img/hero.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end; }
+  @media (max-width: 524px) {
+    .hero {
+      min-height: 800px;
+      background-image: url("assets/img/hero-sm.jpg");
+      background-position: center bottom; } }
+  .hero--center {
+    justify-content: center;
+    align-items: center; }
+  .hero--top {
+    justify-content: center;
+    align-items: baseline; }
+  .hero__image {
+    width: 100%; }
+  .hero__container {
+    width: 100%;
+    padding: 50px; }
+  .hero .btn {
+    margin-top: 2rem; }
+    @media (min-width: 500px) {
+      .hero .btn {
+        margin-top: 3rem; } }
+  .hero__message {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; }
+    .hero__message-title {
+      text-align: center;
+      color: #000;
+      font-size: 44px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 42px;
+      font-weight: 700; }
+      @media (min-width: 500px) {
+        .hero__message-title {
+          font-size: 64px;
+          line-height: 62px; } }
+      @media (min-width: 768px) {
+        .hero__message-title {
+          font-size: 84px;
+          line-height: 82px; } }
+    .hero__message-lead {
+      text-align: center;
+      margin-top: 0;
+      color: #fff;
+      font-size: 1.5rem;
+      letter-spacing: .1rem; }
+    .hero__message-action {
+      color: #fff;
+      background: #5C95A1;
+      height: 40px;
+      font-size: 1rem;
+      padding: 12px 18px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.banner {
+  padding: 50px 35px;
+  background-color: #000;
+  color: #fff;
+  min-height: 400px; }
+  .banner__image {
+    width: 100%;
+    display: none; }
+  @media (max-width: 768px) {
+    .banner__container {
+      padding: 25px; } }
+  .banner p {
+    margin-top: 0;
+    font-size: 18px; }
+    @media (min-width: 1000px) {
+      .banner p {
+        font-size: 24px; } }
+  .banner__left {
+    background-color: #fff;
+    color: #000; }
+  .banner__title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem; }
+    @media (min-width: 768px) {
+      .banner__title {
+        text-align: left; } }
+  .banner__title-sub {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.16666; }
+  .banner .btn {
+    display: inline-block;
+    margin-top: 1.5rem; }
+  @media (max-width: 768px) {
+    .banner .col-md-6 {
+      padding: 0; }
+    .banner .btn {
+      display: block; } }
+  @media (min-width: 768px) {
+    .banner {
+      background: #fff; }
+      .banner__title {
+        color: #000; }
+      .banner__image {
+        display: block; } }
+
+.benefit {
+  color: #000; }
+  .benefit__left, .benefit__right {
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; }
+    .benefit__left::after, .benefit__right::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0.9; }
+    .benefit__left h3, .benefit__right h3 {
+      font-size: 2rem;
+      margin-bottom: 0; }
+  .benefit__title {
+    color: #000;
+    text-transform: uppercase; }
+  .benefit__description {
+    margin-bottom: 25px;
+    font-weight: 600; }
+  .benefit .list {
+    list-style: none;
+    padding: 0; }
+    .benefit .list li {
+      margin-bottom: 25px; }
+    .benefit .list__title {
+      color: #000;
+      font-size: 1.25rem;
+      font-weight: 700; }
+    .benefit .list__description {
+      color: #2e2e2e; }
+  .benefit__left {
+    background: url("assets/img/PCB_formula_texture_left.jpg"); }
+  .benefit__right {
+    background: url("assets/img/PCB_formula_texture_right.jpg"); }
+
+.apply {
+  padding: 2rem 35px;
+  color: #000; }
+  .apply__wrapper {
+    display: flex;
+    align-items: center; }
+  .apply__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #000; }
+  .apply p {
+    color: #000;
+    font-size: 18px; }
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0; }
+  footer .container {
+    max-width: 800px;
+    padding-bottom: 5px; }
+
+.action {
+  background-color: #286bcb;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center; }
+  .action__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: black; }
+  .action__description {
+    color: #000; }
+  .action .btn {
+    background: #000; }
+
+.fbSection {
+  display: none;
+  background: #2e426d;
+  padding: 120px 25px;
+  text-align: center; }
+
+.fbSection .content {
+  max-width: 800px;
+  display: inline-block; }
+
+.fbSection .title {
+  color: white;
+  margin-bottom: 40px; }
+
+.fbSection .title .icon {
+  margin-right: 16px; }
+
+.fbSection .title .icon * {
+  fill: white !important; }
+
+.fbSection .description {
+  color: white;
+  margin-bottom: 40px; }
+
+@media only screen and (max-width: 800px) {
+  .fbSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .fbSection .title {
+    font-size: 34px;
+    margin-bottom: 25px; }
+  .fbSection .title .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+  .fbSection .description {
+    margin-bottom: 25px; } }
+
+</style>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+</head>
+
+<body>
+  <main class="content">
+    <section class="hero hero--top">
+      <div class="container-fluid hero__container">
+        <div class="">
+          <div class="col-lg-7 m-auto hero__message">
+            <h1 class="hero__message-title">Equilibria Ambassador Community</h1>
+            <!-- <p class="hero__message-lead">Join iFit's elite team of fitness ambassadors!</p> -->
+            <!-- <div> -->
+            <a href="#apply" class="btn">
+              <div class="label">
+                Join Our Community
+              </div>
+            </a>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="banner__title">
+              About the Equilibria Ambassador Community
+            </div>
+            <div class="banner__left">
+              <div class="banner__container">
+                <!-- <h2 class="banner__title-sub"> -->
+                <p>
+                  Equilibria is a for women, by women CBD company. Our high quality, farm-to-home products are designed
+                  for the modern women in mind! As a female-founded company, we understand that women’s bodies are
+                  different — from cyclical changes to the very real challenges of childbirth or menopause.
+                </p>
+                <p>
+
+                  We aren’t just another CBD company. Equilibria differentiates ourselves from the competition with our
+                  medical grade production standards (because women deserve the best!) and our custom dosage plan which
+                  assigns a dosage expert to each member whose entire job is to help you identify the best CBD dosage +
+                  routine for you!
+                </p>
+                <p>
+                  At Equilibria, we truly view our influencer partners as part of the EQ family so we’ve designed a
+                  lucrative affiliate program that prioritizes your success! We’re excited to be a partner in your
+                  journey towards balance.
+                </p>
+
+                <a href="#apply" class="btn">
+                  <div class="label">Become a VIP(P)</div>
+                </a>
+
+              </div>
+              <!-- <div class="action">
+                <div class="action__title">Apply to join</div>
+                <p class="action__description">
+                  <b>It only takes a few minutes, and helps us to learn</b>
+                  more about you and your pet!
+
+                </p>
+
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/img/about.jpg" alt="" class="banner__image">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="py-5">
+      <div class="container">
+        <img src="/assets/img/logos.jpg" alt="" class="w-100">
+      </div>
+    </div>
+
+
+    <!-- CALL TO ACTION -->
+    <div class="apply" id="apply">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 apply__wrapper">
+            <div>
+              <h2 class="apply__title">Join our community today!</h2>
+              <p>
+                We would love for you to consider joining our ambassador community. At Equilibria, we view our
+                ambassadors as part of the team so we’ve designed a program that prioritizes your success. We’re excited
+                to be a partner in your journey towards balance! Apply now!
+              </p>
+              <img src="assets/img/PCB_face_washing.jpg" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <iframe id="app_form" frameBorder="0" style="width:100%;height:650px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fbSection">
+      <div class="content">
+        <div class="title">
+          <svg class="icon SvgIcon" style="width:34px;height:34px" viewBox="0 0 408.788 408.788">
+            <path style="fill:#475993"
+              d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z">
+            </path>
+          </svg> Join the Facebook group</div>
+        <div class="description">Once you&#x27;re approved as an ambassador, join the private Facebook Group to get
+          notified about new campaigns on AspireIQ before anyone else, learn about exclusive events, connect with
+          other ambassadors, share
+          feedback directly with the AspireIQ team, and stay up to date on industry news!</div>
+        <div class="Button primary round">
+          <div class="label">Join the Group</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- Copyright  -->
+      <div class="container">
+        <!-- <span>©</span> -->
+        2020 Equilibria All Rights Reserved. I understand that program application application does not guarantee
+        selection. Equilibria will reach out if this is a fit. Questions? Contact partnerships@myEQ.com.
+      </div>
+      </div>
+
+    </footer>
+  </main>
+  <script src="https://kit.fontawesome.com/9dd1dcdbe8.js" crossorigin="anonymous"></script>
+  <script>
+    var iframe = document.getElementById("app_form");
+    var parts = window.location.pathname.split('/');
+    var lastSegment = parts.pop() || parts.pop();
+    var baseUrl = window.location.origin; // e.g. https://community.aspireiq.com
+    var redirectUrl = baseUrl + '/join/' + lastSegment + '/thankyou'; // change this to the url you want redirected to.
+
+    iframe.setAttribute('src', baseUrl + '/onboarding_form/' + lastSegment + window.location.search + '&redirectUri=' +
+      redirectUrl);
+  </script>
+
+  <script>
+    function anchorLinkHandler(e) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+
+      e.preventDefault();
+      const targetID = this.getAttribute("href");
+      const targetAnchor = document.querySelector(targetID);
+      if (!targetAnchor) return;
+      const originalTop = distanceToTop(targetAnchor);
+
+      window.scrollBy({
+        top: originalTop,
+        left: 0,
+        behavior: "smooth"
+      });
+
+      const checkIfDone = setInterval(function () {
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = "-1";
+          targetAnchor.focus();
+          window.history.pushState("", "", targetID);
+          clearInterval(checkIfDone);
+        }
+      }, 1000);
+    }
+
+    const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+
+    linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+  </script>
+</body>
+
+</html>
