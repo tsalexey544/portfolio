@@ -1,0 +1,155 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: $body-font;
+  font-weight: $body-weight;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-family: sans-serif; */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 16px;
+  // font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+}
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #40a9ff;
+}
+
+a:active {
+  color: #096dd9;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.mb-7 {
+  margin-bottom: $size-7;
+}
+
+.p-0 {
+  padding: 0;
+}
+.py-9 {
+  padding-top: $size-9;
+  padding-bottom: $size-9;
+}
+.px-5 {
+  padding-left: $size-5;
+  padding-right: $size-5;
+}
+
+// .btn {
+//   display: inline-block;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   padding: 20px 20px;
+//   border: 3px solid $yellow;
+//   margin: 20px;
+//   position: relative;
+//   color: $white;
+//   letter-spacing: 1px;
+
+//   // &:before {
+//   //   content: '';
+//   //   width: 20px;
+//   //   height: 20px;
+//   //   background: $black;
+//   //   border: 3px solid $yellow;
+//   //   transform: rotate(45deg);
+//   //   position: absolute;
+//   //   border-top: 0;
+//   //   border-left: 0;
+//   //   border-bottom: 0;
+//   //   top: -11px;
+//   //   left: -11px;
+//   // }
+
+//   &:after {
+//     content: '';
+//     width: 20px;
+//     height: 18px;
+//     background: $black;
+//     border: 3px solid $yellow;
+//     transform: rotate(-132deg);
+//     position: absolute;
+//     border-top: 0;
+//     border-left: 0;
+//     border-bottom: 0;
+//     top: auto;
+//     right: -11px;
+//     bottom: -11px;
+//   }
+// }
+
+.bg-about {
+  background: url('https://storage.googleapis.com/aspirex-program-onboarding/petcurean/GS_Dog_Owner_Thanksgiving_1020.jpg?_ga=2.113630016.-671456732.1596302497');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+.action {
+  padding: $size-5;
+  background: $black;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  p {
+    color: $white;
+  }
+}

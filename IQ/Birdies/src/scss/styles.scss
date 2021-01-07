@@ -1,0 +1,913 @@
+@import 'grid';
+// ====================
+// VARIABLES
+// ====================
+
+$black: #000;
+$white: #fff;
+$yellow: #fdb813;
+$pink: #fccfd3;
+
+//
+// FONTS
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,700&display=swap');
+
+$border-radius: 5px;
+$header-font: calluna, serif;
+$header-weight: 900;
+$body-font: sofia-pro, sans-serif;
+$body-weight: 300;
+
+// SIZES
+$spacer: 1rem !default;
+$size-1: ($spacer * 0.25);
+$size-2: ($spacer * 0.5);
+$size-3: $spacer;
+$size-4: ($spacer * 1.5);
+$size-5: ($spacer * 2);
+$size-6: ($spacer * 2.5);
+$size-7: ($spacer * 3);
+$size-8: ($spacer * 3.5);
+$size-9: ($spacer * 4);
+
+// $secondary: ;
+$title-color: $black;
+$subtitle-color: $black;
+$btn-color: $pink;
+
+.bg-white {
+  background-color: $white;
+}
+
+@import './base';
+@import './components/btn';
+@import './components/hero';
+@import './components/banner';
+@import './components/benefit';
+@import './components/apply';
+@import './components/footer';
+@import './components/action';
+
+// COLORS
+
+// $green: #588d32;
+// $black: #4c4f56;
+// $white: white;
+// $blue: #48c4d8;
+// $blue-75: #80d0df;
+// $blue-50: #afe1eb;
+
+// $pink: #f9cfdd;
+
+// HERO
+// $hero-background-img: 'assets/img/hero.jpg';
+// $hero-background-overlay: #fff;
+// $hero-background-overlay-opacity: 0.3;
+// $hero-background-mobile-img: null;
+// $hero-background-mobile-overlay: #ffdeec;
+$hero-background-mobile-overlay-opacity: 0.8;
+
+// About section
+// $about-background-img: 'assets/img/about.jpg';
+$about-background-overlay: null;
+$about-background-overlay-opacity: 1;
+// $about-cta-color: $green;
+
+// Who you are / What you'll get section
+
+// Left
+// $wya-background-img: 'assets/img/left.jpg';
+// $wya-background-overlay: #484c56;
+// $wya-background-overlay: $primary;
+$wya-background-overlay-opacity: 0.2;
+$wya-color: $white;
+$wya-listItem-color: $black;
+$wya-listItem-icon: $white;
+// Right
+// $wyg-background-img: 'assets/img/right.jpg';
+// $wyg-background-overlay: #1a3f4b;
+$wyg-background-overlay: #fff;
+$wyg-background-overlay-opacity: 0.2;
+// $wyg-listItem-icon: $primary;
+
+.title,
+h1,
+h1.title,
+h2,
+h2.title,
+h3,
+h3.title,
+h4,
+h4.title,
+h5,
+h5.title {
+  font-family: $header-font;
+  font-weight: $header-weight;
+  color: $title-color;
+  margin-top: 0;
+  z-index: 9;
+}
+
+// .aboutSection {
+//   // background: $about-background-overlay;
+//   &::before {
+//     content: "";
+//     background-image: url($about-background-img);
+//     opacity: $about-background-overlay-opacity;
+//     background-size: cover;
+//     background-position: center 10%;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: -15;
+//   }
+
+//   .title {
+//     text-align: left;
+//     color: $subtitle-color;
+//     font-size: 48px;
+//     font-weight: bold;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: normal;
+//     letter-spacing: normal;
+//     color: #124327;
+//   }
+
+//   .subtitle {
+//     color: $subtitle-color;
+//   }
+
+//   .left {}
+
+//   .description {}
+
+//   .message {
+//     background: #ffffffc9;
+//     -webkit-box-shadow: 0 2px 34px 0 rgba(0,0,0,.15);
+//     box-shadow: 0 2px 34px 0 rgba(0,0,0,.15);
+
+//     &-body {
+//       padding: $size-4;
+//     }
+//   }
+
+//   .applyBox {
+//     .title {
+//       text-align: center;
+//     }
+//   }
+// }
+
+// .icon-yellow {
+//   color: $primary;
+// }
+
+// .icon-lg {
+//   font-size: 2em;
+//   margin-top: -7px !important;
+// }
+
+// .MemberJoin .applySection .left .title {
+//   color: $title-color;
+//   font-size: 34px;
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: 0.3px;
+//   margin-bottom: 30px;
+// }
+// @font-face {
+//   font-family: beatrice-regular;
+//   font-weight: normal;
+//   font-style: normal;
+//   src: url("assets/font/Beatrice-Regular.otf");
+// }
+// @font-face {
+//   font-family: beatrice-bold;
+//   font-weight: bold;
+//   font-style: normal;
+//   src: url("assets/font/Beatrice-Bold.otf");
+// }
+
+// .MemberJoin .headerSection .title {
+//   // font-family: "beatrice-bold", sans-serif;
+//   font-size: 60px;
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: -0.5px;
+//   color: $primary;
+// }
+
+// .MemberJoin .aboutSection > .title,
+// .MemberJoin .fbSection .title {
+//   // font-family: beatrice-normal, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+//   font-size: 48px;
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: normal;
+//   color: #1a1818;
+// }
+
+// .MemberJoin .benefitsSection .title {
+//   font-size: 34px;
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: 0.3px;
+//   color: #1a1818;
+// }
+
+// .MemberJoin .aboutSection > .left > .subtitle,
+// .MemberJoin .headerSection .subtitle {
+//   font-size: 24px;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: normal;
+//   color: $primary;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem .header {
+//   font-family: $header-font;
+//   text-transform: lowercase;
+//   font-size: 16px;
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 1.5;
+//   margin-bottom: 0;
+//   letter-spacing: 0.2px;
+//   color: $wya-listItem-color;
+// }
+
+// .MemberJoin .aboutSection .applyBox .subtitle,
+// .MemberJoin .aboutSection .applyBox .title,
+// .MemberJoin .aboutSection > .left > .description,
+// .MemberJoin .applySection .left .description,
+// .MemberJoin .benefitsSection .description,
+// .MemberJoin .benefitsSection .left .listItem .itemText,
+// .MemberJoin .benefitsSection .right .listItem .itemText,
+// .MemberJoin .fbSection .description {
+//   /* font-family: "proxima-nova", sans-serif; */
+//   font-size: 16px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 1.5;
+//   letter-spacing: 0.4px;
+//   color:$black;
+// }
+
+// .copyrightSection {
+//   /* font-family: "proxima-nova", sans-serif; */
+//   font-size: 14px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 1.43;
+//   letter-spacing: 0.3px;
+//   color: white;
+//   background: $primary;
+//   text-align: center;
+//   padding: 18px 25px;
+// }
+
+// .MemberJoin {
+//   height: 100%;
+//   background-color: white;
+// }
+
+// .MemberJoin .headerSection {
+//   text-align: center;
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-pack: center;
+//   justify-content: center;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   flex-direction: column;
+//   padding: 20px;
+//   min-height: 800px;
+//   // background-color: black;
+//   // background-image: url($hero-background-img);
+//   // background-size: cover;
+//   // background-position: center center;
+//   // background-repeat: no-repeat;
+// }
+
+// .MemberJoin .headerSection {
+//   position: relative;
+//   -webkit-box-flex: 1;
+//   flex: 1;
+//   padding: 60px 80px;
+//   background-color: $hero-background-overlay;
+//   z-index: 1;
+// }
+
+// .MemberJoin .headerSection::before {
+//   content: "";
+//   background-image: url($hero-background-img);
+//   opacity: $hero-background-overlay-opacity;
+//   background-size: cover;
+//   background-position: center 10%;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+// }
+
+// .MemberJoin .headerSection .btn {
+//   font-family: $header-font;
+//   height: 60px;
+//   min-width: 234px;
+//   font-size: 18px;
+//   color: #ffffff;
+//   // border: 2px solid #ffffff;
+//   padding: 12px 18px;
+//   border-radius: 0;
+//   font-size: 18px;
+//   // background: $blue;
+
+//   .label {
+//     // margin-top: -4px;
+//   }
+// }
+
+// .MemberJoin .headerSection .btn:hover {
+// height: 60px;
+// min-width: 234px;
+// font-size: 18px;
+// color: #000;
+// border: 2px solid #ffdeec;
+// padding: 12px 18px;
+// border-radius: 8px;
+// font-size: 18px;
+// background: darken($primary, 5);
+// }
+
+// .MemberJoin .headerSection .title {
+// color: white !important;
+// margin-bottom: 30px;
+// }
+
+// .MemberJoin .headerSection .subtitle {
+// color: white !important;
+// margin-bottom: 40px;
+// font-family: $header-font;
+// }
+
+// .MemberJoin .headerSection .subtitle,
+// .MemberJoin .headerSection .title {
+//   // text-shadow: 1px 1px 14px #00000061;
+// }
+
+// .MemberJoin .headerSection .logo {
+//   display: none;
+//   width: 40px;
+//   height: 40px;
+//   margin-bottom: 32px;
+//   -webkit-filter: brightness(0) invert(1);
+//   filter: brightness(0) invert(1);
+// }
+// @media only screen and (max-width: 600px) {
+//   .MemberJoin .headerSection {
+//     min-height: 600px;
+//     padding: 50px 10px;
+//     // text-align: left;
+//     background-image: url($hero-background-mobile-img);
+//   }
+
+//   .MemberJoin .headerSection .title {
+//     font-size: 48px;
+//   }
+
+//   .MemberJoin .headerSection .subtitle {
+//     font-size: 26px;
+//   }
+
+//   .MemberJoin .headerSection .logo {
+//     display: block;
+//   }
+// }
+
+// .MemberJoin .aboutSection {
+//   position: relative;
+//   text-align: center;
+//   padding: 120px 80px;
+//   /* background-color: white; */
+//   /* background-image: url(https://i.imgur.com/LA92ksd.jpg); */
+//   background-size: cover;
+//   background-position: center 90%;
+//   background-repeat: no-repeat;
+//   z-index: 1;
+// }
+// .MemberJoin .aboutSection::before {
+//   content: "";
+//   background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/hu_assets/New%20Chocolate%20Bars%20-%20Gabrielle%20Bellettieri%20__optimized.jpg");
+//   opacity: 0.2;
+//   background-size: cover;
+//   background-position: center 10%;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+// }
+
+// .MemberJoin .aboutSection .left {
+//   margin-right: auto;
+//   max-width: 500px;
+//   text-align: left;
+// }
+
+// .MemberJoin .aboutSection .applyBox {
+//   padding: 40px 20px;
+//   /* border-radius: 6px; */
+//   text-align: center;
+//   background: #2dccd3ad;
+//   /* box-shadow: 0px 16px 34px rgba(48, 53, 57, 0.25); */
+// }
+
+// .MemberJoin .aboutSection .applyBox .title {
+//   font-weight: bold;
+//   font-size: 18px;
+//   color: white;
+//   margin-bottom: 10px;
+// }
+
+// .MemberJoin .aboutSection .applyBox .subtitle {
+//   color: white;
+//   margin-bottom: 14px;
+// }
+
+// .MemberJoin .aboutSection .applyBox .btn {
+//   text-transform: uppercase;
+//   background: $white;
+//   color: $primary;
+//   border-radius: 0 !important;
+//   height: 44px;
+//   min-width: 177px;
+//   font-size: 16px;
+//   // margin-top: 20px;
+// }
+
+// .MemberJoin .aboutSection > .title {
+//   margin-bottom: 120px;
+//   margin-top: 0;
+//   color: $title-color;
+// }
+
+// .MemberJoin .aboutSection > .left > .subtitle {
+//   margin-bottom: 40px;
+//   color: #2e426d;
+// }
+
+// .MemberJoin .aboutSection > .left > .description {
+//   margin-bottom: 30px;
+// }
+// @media only screen and (max-width: 600px) {
+//   .MemberJoin .aboutSection {
+//     background-image: none;
+//     text-align: left;
+//     padding: 50px 25px;
+//   }
+
+//   .MemberJoin .aboutSection > .title {
+//     margin-bottom: 24px;
+//   }
+
+//   .MemberJoin .aboutSection .title {
+//     font-size: 30px;
+//   }
+
+// .MemberJoin .aboutSection .subtitle {
+// font-size: 22px;
+//   }
+// }
+
+// .MemberJoin .benefitsSection {
+//   /* background: #2e426d; */
+//   min-height: 400px;
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   flex-direction: row;
+// }
+
+// .MemberJoin .benefitsSection .title {
+//   margin-bottom: 30px;
+// }
+
+// .MemberJoin .benefitsSection .description {
+//   font-size: 18px;
+// }
+
+// .MemberJoin .benefitsSection .left {
+//   position: relative;
+//   -webkit-box-flex: 1;
+//   flex: 1;
+//   padding: 60px 80px;
+//   background-color: $wya-background-overlay;
+//   z-index: 1;
+// }
+// @media only screen and (max-width: 900px) {
+//   .MemberJoin .benefitsSection .left {
+//     padding: 60px 105px;
+//   }
+// }
+//
+// @media only screen and (min-width: 576px) {
+//   .MemberJoin .benefitsSection .left .block-wrapper,
+//   .MemberJoin .benefitsSection .right .block-wrapper {
+//     max-width: 540px;
+//     margin: auto;
+//   }
+// }
+// @media only screen and (min-width: 768px) {
+//   .MemberJoin .benefitsSection .left .block-wrapper,
+//   .MemberJoin .benefitsSection .right .block-wrapper {
+//     max-width: 720px;
+//     margin: auto;
+//   }
+// }
+
+// .MemberJoin .benefitsSection .left::before {
+//   content: "";
+//   background-image: url($wya-background-img);
+//   opacity: $wya-background-overlay-opacity;
+//   background-size: cover;
+//   background-position: center 10%;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+// }
+
+// .MemberJoin .benefitsSection .left .description,
+// .MemberJoin .benefitsSection .left .title {
+//   color: $white;
+// }
+
+// .MemberJoin .benefitsSection .left .description {
+//   margin-bottom: 50px;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem {
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   flex-direction: row;
+//   margin-bottom: 30px;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem .icon {
+//   padding-right: 20px;
+//   color: $wya-listItem-icon;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem .icon * {
+//   fill: #7fd4f4 !important;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem .icon,
+// .MemberJoin .benefitsSection .right .listItem .icon {
+//   // margin-top: 5px;
+// }
+
+// .MemberJoin .benefitsSection .left .listItem .text {
+//   -webkit-box-flex: 1;
+//   flex: 1;
+// }
+// .MemberJoin .benefitsSection .left .listItem .header {
+//     color: $blue-50;
+//     // margin-bottom: 8px;
+//   }
+// .MemberJoin .benefitsSection .left .listItem .itemText {
+//   color: $wya-color;
+//   margin-bottom: 15px;
+// }
+
+// .MemberJoin .benefitsSection .right {
+//   position: relative;
+//   -webkit-box-flex: 1;
+//   flex: 1;
+//   padding: 60px 80px;
+//   background-color: $wyg-background-overlay;
+//   z-index: 1;
+// }
+
+// .MemberJoin .benefitsSection .right::before {
+//   content: "";
+//   background-image: url($wyg-background-img);
+//   opacity: $wyg-background-overlay-opacity;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+// }
+
+// .MemberJoin .benefitsSection .right .description {
+//   margin-bottom: 50px;
+// }
+
+// .MemberJoin .benefitsSection .right .listItem {
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   flex-direction: row;
+//   margin-bottom: 20px;
+// }
+
+// .MemberJoin .benefitsSection .right .listItem .icon {
+// overflow: hidden;
+// margin-right: 10px;
+// margin-top: 3px;
+// position: relative;
+// color: $wyg-listItem-icon;
+// width: 10px;
+// height: 10px;
+// background: #3996e0;
+// -webkit-transform: rotateZ(45deg);
+// transform: rotateZ(45deg);
+// -webkit-transform-origin: center center;
+// transform-origin: center center;
+// }
+// .MemberJoin .benefitsSection .right .listItem .icon::before {
+//   content: '';
+//   background: #67BBFE;
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+//   -webkit-transform: rotateZ(-45deg) translateX(5px) translateY(-5px);
+//   transform: rotateZ(-45deg) translateX(5px) translateY(-5px);
+// }
+
+// .MemberJoin .benefitsSection .right .listItem .itemText {
+//   -webkit-box-flex: 1;
+//   flex: 1;
+//   margin-bottom: 15px;
+//   color: $black;
+// }
+// @media only screen and (max-width: 900px) {
+// .MemberJoin .benefitsSection {
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   flex-direction: column;
+// }
+
+// .MemberJoin .benefitsSection .title {
+//   font-size: 34px;
+// }
+/* .MemberJoin .benefitsSection .left {
+      background-image: url(https://i.imgur.com/kagvQBZ.jpg);
+    }
+
+    .MemberJoin .benefitsSection .right {
+      background-image: url(https://i.imgur.com/0b2UneB.jpg);
+    } */
+// .MemberJoin .benefitsSection .left,
+// .MemberJoin .benefitsSection .right {
+//   padding: 50px 25px;
+// }
+// }
+
+// .MemberJoin .applySection {
+//   background: white;
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   flex-direction: row;
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+// }
+
+// .MemberJoin .applySection .left {
+//   -webkit-box-flex: 1;
+//   flex: 1;
+// }
+
+// .MemberJoin .applySection .left > * {
+//   padding-left: 80px;
+// }
+
+// .MemberJoin .applySection .left .description {
+//   margin-bottom: 40px;
+// }
+
+// .MemberJoin .applySection .left .img {
+//   width: 100%;
+// }
+
+// .MemberJoin .applySection .right {
+//   -webkit-box-flex: 1;
+//   flex: 1;
+//   text-align: center;
+// }
+
+// .MemberJoin .applySection .right > * {
+//   max-width: 400px;
+//   margin: auto;
+// }
+// @media only screen and (max-width: 900px) {
+//   .MemberJoin .applySection {
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     flex-direction: column;
+//     padding: 50px 25px;
+//   }
+
+//   .MemberJoin .applySection .left > * {
+//     padding-left: 0;
+//   }
+
+//   .MemberJoin .applySection .left .img {
+//     display: none;
+//   }
+
+//   .MemberJoin .applySection .right {
+//     margin-top: 32px;
+//   }
+
+//   .MemberJoin .applySection .title {
+//     text-align: center;
+//   }
+// }
+
+// .MemberJoin .applySection .title {
+//   font-size: 34px;
+// }
+
+.fbSection {
+  display: none;
+  background: #2e426d;
+  padding: 120px 25px;
+  text-align: center;
+}
+
+.fbSection .content {
+  max-width: 800px;
+  display: inline-block;
+}
+
+.fbSection .title {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.fbSection .title .icon {
+  margin-right: 16px;
+}
+
+.fbSection .title .icon * {
+  fill: white !important;
+}
+
+.fbSection .description {
+  color: white;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 800px) {
+  .fbSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .fbSection .title {
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+
+  .fbSection .title .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  .fbSection .description {
+    margin-bottom: 25px;
+  }
+}
+
+.Button {
+  position: relative;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0;
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0;
+}
+
+// .Button:hover.primary {
+//   background-color: $primary;
+// }
+
+// .Button:active.primary {
+//   background-color: $primary;
+// }
+
+// .Button.primary {
+//   color: $black;
+//   background-color: $primary;
+//   border: none;
+// }
+
+.Button.round {
+  border-radius: 100px;
+}
+
+.Button .label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+}
+
+.SvgIcon {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: currentColor;
+  fill: currentColor;
+}
+
+.w-100 {
+  width: 100%;
+}
+//
+// .mt-0 {
+//   margin-top: 0;
+// }
+// .mt-1 {
+//   margin-top: 0.5rem;
+// }
+// .mt-2 {
+//   margin-top: 1rem;
+// }
+
+.m-auto {
+  margin: auto;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.fa-drop:before {
+  content: url('https://storage.googleapis.com/aspirex-program-onboarding/godsquad/drop--black.png');
+  transform: scale(0.4);
+  display: block;
+  margin-top: -3px;
+  margin-left: -8px;
+  // margin-top: -2px;
+}

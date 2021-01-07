@@ -1,0 +1,87 @@
+.hero {
+  // background-image: url('assets/img/hero.jpg');
+  background-image: url('http://storage.googleapis.com/aspirex-program-onboarding/Birdies/hero.jpg');
+
+  width: 100%;
+  background-size: 162%;
+  background-color: #000;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 500px;
+
+  @media (min-width: 768px) {
+    background-size: cover;
+    background-position: center;
+
+    min-height: 800px;
+  }
+
+  display: flex;
+  align-items: flex-end;
+
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__container {
+    // background-color: #fff5ece8;
+    width: 100%;
+    padding: 50px;
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    &-title {
+      text-align: center;
+      color: $title-color;
+      font-size: 48px;
+      font-weight: bold;
+      // text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 0.2rem;
+      font-weight: $header-weight;
+
+      @media (min-width: 768px) {
+        font-size: 80px;
+      }
+    }
+
+    &-lead {
+      text-align: center;
+      margin-top: 0;
+      color: $subtitle-color;
+      font-size: 20px;
+      letter-spacing: 0.1rem;
+      margin-top: $size-3;
+      margin-bottom: $size-5;
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    &-action {
+      color: $black;
+      background: $btn-color;
+      height: 67px;
+      font-size: 16px;
+      padding: 12px 38px;
+      border-radius: $border-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}

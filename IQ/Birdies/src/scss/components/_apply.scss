@@ -1,0 +1,28 @@
+.apply {
+  background: $white;
+  padding: 50px;
+  color: $black;
+
+  &__wrapper {
+    display: flex;
+    // align-items: center;
+    padding-left: 0;
+  }
+
+  &__title {
+    font-family: calluna, serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #56585b;
+    // text-transform: uppercase;
+    // color: $white;
+    // line-height: 3.75rem;
+    span {
+      font-family: sofia-pro, sans-serif;
+    }
+  }
+
+  p {
+    color: $white;
+  }
+}

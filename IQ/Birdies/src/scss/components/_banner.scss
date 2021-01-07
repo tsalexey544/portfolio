@@ -1,0 +1,57 @@
+.banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-image: url('http://storage.googleapis.com/aspirex-program-onboarding/Birdies/About.jpg');
+  }
+
+  h2 {
+    font-size: 40px;
+    color: $black;
+    // text-transform: uppercase;
+    line-height: 2.75rem;
+    @media (min-width: 768px) {
+      font-size: 48px;
+      text-align: center;
+    }
+  }
+
+  p {
+    // color: #2e2e2e;
+  }
+
+  &__content {
+    background-color: $white;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      padding: $size-5 $size-5;
+    }
+
+    &-lead {
+      font-size: 21px;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    &-light {
+      font-weight: 300;
+    }
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__action {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
